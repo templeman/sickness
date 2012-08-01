@@ -68,19 +68,16 @@ body {
   word-spacing: 2px;
   border-width: 127px;
   border-image: url("/image/border.png") 127 repeat repeat;
-  -webkit-border-image: url("/image/border.png") 127 repeat repeat; }
-
-#wrapper {
-  /* margin: 200px auto 0; */ }
+  -webkit-border-image: url("/image/border.png") 127 repeat repeat;
+  -moz-border-image: url("/image/border.png") 127 repeat repeat;
+  -o-border-image: url("/image/border.png") 127 repeat repeat; }
 
 a {
   text-decoration: none; }
-
-a:link, a:visited {
-  color: #16090a; }
-
-a:hover, a:active {
-  color: #c08a00; }
+  a:link, a:visited {
+    color: #16090a; }
+  a:hover, a:active {
+    color: #c08a00; }
 
 nav {
   position: fixed;
@@ -89,26 +86,21 @@ nav {
   font-size: 16px;
   margin-left: -200px;
   width: 400px; }
+  nav ul {
+    padding-top: 30px; }
+    nav ul li {
+      display: inline;
+      margin-right: 20px; }
+      nav ul li:last-child {
+        margin-right: 0; }
 
-nav ul {
-  padding-top: 30px; }
-
-nav ul li {
-  display: inline;
-  margin-right: 20px; }
-
-nav ul li:last-child {
-  margin-right: 0; }
-
-#manifesto #content p {
-  margin-bottom: 50px;
-  text-align: left; }
-
-#manifesto #content p:last-child {
-  margin-top: 300px; }
-
-#manifesto #content, #personnel #content {
+#manifesto #content {
   background: none; }
+  #manifesto #content p {
+    margin-bottom: 50px;
+    text-align: left; }
+    #manifesto #content p:last-child {
+      margin-top: 300px; }
 
 #content {
   margin: 0 auto;
@@ -116,9 +108,8 @@ nav ul li:last-child {
   text-align: center;
   padding: 127px 0 0 0;
   background: transparent url("/image/jellyfish.png") top center no-repeat; }
-
-#content img {
-  margin-top: 360px; }
+  #content img {
+    margin-top: 360px; }
 
 h1 {
   color: #555;
@@ -132,12 +123,9 @@ h2 {
 
 .departments {
   padding-top: 50px; }
-
-.departments li {
-  margin: 15px 0; }
-
-.departments li a:hover:after {
-  content: " «"; }
-
-.departments li a:hover:before {
-  content: "» "; }
+  .departments li {
+    margin: 15px 0; }
+    .departments li a:hover:after {
+      content: " «"; }
+    .departments li a:hover:before {
+      content: "» "; }
