@@ -24,7 +24,7 @@
 			}
 
 			form {
-				width: 680px;
+				width: 725px; /* setting for webkit browsers */ /* 680px;*/
 				margin: 100px auto 0;
 			}
 			input {
