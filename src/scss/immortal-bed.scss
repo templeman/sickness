@@ -1,0 +1,432 @@
+/* ============================================================
+
+  DOCUMENT INFORMATION
+  Document    : SSF Global Styles
+  Version     : 2.1
+  Last Update : 04.05.2014
+  Author      : Needle Hoffenheimer
+
+   ============================================================ */
+
+/* ==========================================================================
+   INUITCSS
+   ========================================================================== */
+
+/**
+ * inuitcss, by @csswizardry
+ *
+ * github.com/inuitcss | inuitcss.com
+ */
+
+/**
+ * This is an example inuitcss manifest file. DO NOT MODIFY THIS FILE DIRECTLY.
+ * Instead, copy and paste it into your own CSS directory and make additions,
+ * extensions, and modifications there.
+ */
+
+/**
+ * CONTENTS
+ *
+ * SETTINGS
+ * Config...............Project-level configuration and feature switches.
+ * Core.................inuitcss’ core and setup settings.
+ * Global...............Project-wide variables and settings.
+ *
+ * TOOLS
+ * Font-size............A mixin which guarantees baseline-friendly line-heights.
+ * Clearfix.............Micro clearfix mixin.
+ * Hidden...............Mixin for hiding elements.
+ * Sass MQ..............inuitcss’ default media query manager.
+ *
+ * GENERIC
+ * Box-sizing...........Better default `box-sizing`.
+ * Normalize.css........A level playing field using @necolas’ Normalize.css.
+ * Reset................A tiny reset to complement Normalize.css.
+ * Shared...............Sensibly and tersely share some global commonalities
+ *                      (particularly useful when managing vertical rhythm).
+ *
+ * ELEMENTS
+ * Page.................Set up our document’s default `font-size` and
+ *                      `line-height`.
+ * Headings.............Very minimal (i.e. only font-size information) for
+ *                      headings 1 through 6.
+ * Images...............Base image styles.
+ * Tables...............Simple table styles.
+ *
+ * OBJECTS
+ * Wrapper..............Page constraint object.
+ * Layout...............Generic layout module.
+ * Media................Image- and text-like content side by side. The
+ *                      poster-child of OOCSS.
+ * Flag.................Table-layout-based advancement on the Media object.
+ * List-bare............Lists with no bullets or indents.
+ * List-inline..........A list whose items all sit in a line.
+ * Box..................Simple boxing abstraction.
+ * Block................Image-on-top-of-text object.
+ * Ratio................A container for maintaining aspect ratio of content.
+ * Crop.................Provide a cropping context for media (images, etc.).
+ * Table................Classes for manipulating `table`s.
+ * Pack.................Pack items into available horizontal space.
+ *
+ * COMPONENTS
+ * Buttons..............An example button component, and how it fits into the
+ *                      inuitcss framework.
+ *
+ * UTILITIES
+ * Clearfix.............Bind our clearfix onto a utility class.
+ * Widths...............Simple width helper classes.
+ * Headings.............Reassigning our heading styles to helper classes.
+ * Spacings.............Nudge bits of the DOM around with these spacing
+ *                      classes.
+ * Print................Reset-like styles taken from the HTML5 Boilerplate.
+ * Hide.................Helper classes to hide content
+ */
+
+// SETTINGS
+@import "settings.config";
+@import "settings.core";
+@import "./node_modules/inuitcss/settings/settings.core";
+@import "settings.global";
+@import "settings.colors";
+
+
+// TOOLS
+// @import "tools/tools.font-size";
+@import "tools.aliases";
+@import "tools.paths";
+@import "tools.clearfix";
+@import "tools.font-weight";
+// @import "tools/tools.hidden";
+// @import "node_modules/sass-mq/mq";
+
+
+// GENERIC
+@import "./node_modules/inuitcss/generic/generic.box-sizing";
+@import "./node_modules/inuitcss/generic/generic.normalize";
+@import "./node_modules/inuitcss/generic/generic.reset";
+// @import "./node_modules/inuitcss/generic/generic.shared";
+
+
+// ELEMENTS
+@import "elements.page";
+@import "./node_modules/inuitcss/elements/elements.page";
+// @import "elements/elements.headings";
+// @import "elements/elements.images";
+// @import "elements/elements.tables";
+
+
+// OBJECTS
+//
+// Uncomment and add to this section as necessary.
+// @import "objects/objects.wrapper";
+// @import "objects/objects.layout";
+// @import "objects/objects.media";
+// @import "objects/objects.flag";
+// @import "objects/objects.list-bare";
+// @import "objects/objects.list-inline";
+// @import "objects/objects.box";
+// @import "objects/objects.block";
+// @import "objects/objects.ratio";
+// @import "objects/objects.crop";
+// @import "objects/objects.table";
+// @import "objects/objects.pack";
+
+
+// COMPONENTS
+//
+// Build and include your project’s UI Compoments here.
+// @import "components/example.components.buttons";
+@import "components.preloader";
+
+
+// UTILITIES
+@import "./node_modules/inuitcss/utilities/utilities.clearfix";
+
+// $inuit-offsets: true;
+// @import "utilities/utilities.widths";
+// @import "utilities/utilities.headings";
+// @import "utilities/utilities.spacings";
+// @import "utilities/utilities.print";
+// @import "utilities/utilities.hide";
+
+
+// IMPORTS
+
+// @import "generic/preloader";
+// immortal bed department
+
+#loader-container {
+  width: 500px;
+  height: 500px;
+  background-image: url('../image/blind-hunters/geo.png');
+}
+
+body {
+  background: #000;
+  overflow: hidden;
+  }
+
+.container {
+  // width: 500px;
+  // height: 500px;
+  // background-image: url('../image/blind-hunters/geo.png');
+}
+
+.container > div {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+#r01 {
+  height: 22px;
+  width: 22px;
+  }
+
+#r02 {
+  height: 48px;
+  width: 48px;
+  }
+
+#r03 {
+  height: 69px;
+  width: 69px;
+  }
+
+#r04 {
+  height: 84px;
+  width: 84px;
+  }
+
+#r05 {
+  height: 112px;
+  width: 112px;
+  }
+
+#r06 {
+  height: 131px;
+  width: 131px;
+  }
+
+#r07 {
+  height: 165px;
+  width: 166px;
+  }
+
+#r08 {
+  height: 177px;
+  width: 177px;
+  }
+
+#r09 {
+  height: 188px;
+  width: 188px;
+  }
+
+#r10 {
+  height: 202px;
+  width: 202px;
+  }
+
+#r11 {
+  height: 221px;
+  width: 221px;
+  }
+
+#r12 {
+  height: 236px;
+  width: 236px;
+  }
+
+#r13 {
+  height: 251px;
+  width: 252px;
+  }
+
+#r14 {
+  height: 288px;
+  width: 289px;
+  }
+
+#r15 {
+  height: 307px;
+  width: 307px;
+  }
+
+#r16 {
+  height: 316px;
+  width: 316px;
+  }
+
+#r17 {
+  height: 327px;
+  width: 327px;
+  }
+
+#r18 {
+  height: 355px;
+  width: 355px;
+  }
+
+#r19 {
+  height: 366px;
+  width: 367px;
+  }
+
+#r20 {
+  height: 378px;
+  width: 379px;
+  }
+
+#r21 {
+  height: 390px;
+  width: 390px;
+  }
+
+#r22 {
+  height: 415px;
+  width: 415px;
+  }
+
+#r23 {
+  height: 449px;
+  width: 449px;
+  }
+
+#r24 {
+  height: 462px;
+  width: 462px;
+  }
+
+#r25 {
+  height: 475px;
+  width: 475px;
+  }
+
+#r26 {
+  height: 490px;
+  width: 490px;
+  }
+
+#r27 {
+  height: 518px;
+  width: 518px;
+  }
+
+#r28 {
+  height: 537px;
+  width: 537px;
+  }
+
+#r29 {
+  height: 550px;
+  width: 550px;
+  }
+
+#r30 {
+  height: 563px;
+  width: 563px;
+  }
+
+#r31 {
+  height: 575px;
+  width: 575px;
+  }
+
+#r32 {
+  height: 593px;
+  width: 593px;
+  }
+
+#r33 {
+  height: 606px;
+  width: 606px;
+  }
+
+#r34 {
+  height: 631px;
+  width: 632px;
+  }
+
+#r35 {
+  height: 646px;
+  width: 646px;
+  }
+
+#r36 {
+  height: 689px;
+  width: 689px;
+  }
+
+#r37 {
+  height: 702px;
+  width: 702px;
+  }
+
+#r38 {
+  height: 741px;
+  width: 741px;
+  }
+
+#r39 {
+  height: 777px;
+  width: 777px;
+  }
+
+#r40 {
+  height: 789px;
+  width: 789px;
+  }
+
+#r41 {
+  height: 800px;
+  width: 800px;
+  }
+
+#r42 {
+  height: 812px;
+  width: 813px;
+  }
+
+#r43 {
+  height: 827px;
+  width: 827px;
+  }
+
+#r44 {
+  height: 836px;
+  width: 836px;
+  }
+
+#r45 {
+  height: 847px;
+  width: 847px;
+  }
+
+#r46 {
+  height: 862px;
+  width: 862px;
+  }
+
+#r47 {
+  height: 896px;
+  width: 906px;
+  }
+
+#r48 {
+  height: 912px;
+  width: 912px;
+  }
+
+#trees {
+  height: 920px;
+  width: 920px;
+  }
+
+@keyframes rotate {
+  from {-webkit-transform: rotate(0deg);}
+  to {-webkit-transform: rotate(360deg);}
+}

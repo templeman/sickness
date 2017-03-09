@@ -1,0 +1,28 @@
+
+// undead languages department
+
+// @import "base";
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+  margin: 0px;
+  padding: 0px;
+  font-family: Geneva, Arial, Helvetica, sans-serif;
+}
+
+.sentence {
+  height: 20px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  // vertical-align: bottom;
+  position: relative;
+  // margin-top: 300px;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+  letter-spacing: 2px;
+  font-size: 14px;
+  overflow: hidden;
+}

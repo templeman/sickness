@@ -1,0 +1,19 @@
+/* ==========================================================================
+   #ALIASES
+   ========================================================================== */
+
+// Map some nicer/shorter aliases to make things a little easier to work with.
+
+// $unit:        $inuit-global-spacing-unit;
+// $unit-tiny:   $inuit-global-spacing-unit-tiny;
+// $unit-small:  $inuit-global-spacing-unit-small;
+// $unit-large:  $inuit-global-spacing-unit-large;
+// $unit-huge:   $inuit-global-spacing-unit-huge;
+//
+// @mixin font-size($args...) {
+//     @include inuit-font-size($args...);
+// }
+
+@mixin clearfix() {
+  @include inuit-clearfix();
+}

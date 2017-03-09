@@ -1,0 +1,62 @@
+{
+  "name": "codeigniter-npm-build",
+  "version": "0.0.1",
+  "description": "An npm build tool designed for Codeigniter",
+  "main": "app.js",
+  "author": "Sam Templeman <templeman@me.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/damonbauer/npm-build-boilerplate"
+  },
+  "bugs": "https://github.com/damonbauer/npm-build-boilerplate/issues",
+  "keywords": [
+    "npm",
+    "scripts",
+    "npm scripts",
+    "watch",
+    "minify",
+    "compress"
+  ],
+  "scripts": {
+    "clean": "rm -f assets/{css/*,js/*,images/*,data/*}",
+    "autoprefixer": "postcss -u autoprefixer -r assets/css/*",
+    "scss": "node-sass --output-style compressed --sourceComments -o assets/css src/scss",
+    "lint": "eslint src/js",
+    "data": "cp -a src/data/* assets/data/",
+    "uglify": "echo '=> minify:js' && mkdir -p assets/js && uglifyjs node_modules/jquery/dist/jquery.js src/js/main.js -b -o assets/js/app.js && uglifyjs src/js/undead-languages.js -m -c -o assets/js/undead-languages.min.js && uglifyjs src/js/corporate-directory.js -m -c -o assets/js/corporate-directory.min.js && uglifyjs src/js/connecting-dots.js -m -c -o assets/js/connecting-dots.min.js && uglifyjs src/js/orphans.js -m -c -o assets/js/orphans.min.js && uglifyjs src/js/immortal-bed.js -m -c -o assets/js/immortal-bed.min.js && uglifyjs src/js/blind-hunters.js -m -c -o assets/js/blind-hunters.min.js",
+    "imagemin": "echo '=> minify:images' && mkdir -p assets/images && cp -a src/images/* assets/images",
+    "sprite": "glue src/images/_sprite --img=src/images --scss --scss=src/scss --sprite-namespace=",
+    "serve": "browser-sync start --proxy \"localhost:8931\" --files \"assets/css/*.css, assets/js/*.js, application/**/*.php, !node_modules/**/*.html\"",
+    "build:css": "npm run scss && npm run autoprefixer",
+    "build:js": "npm run lint && npm run uglify",
+    "build:images": "npm run imagemin",
+    "build:all": "npm run build:css && npm run build:js && npm run build:images && npm run data",
+    "watch:css": "onchange \"src/scss\" -- npm run build:css",
+    "watch:js": "onchange \"src/js\" -- npm run build:js",
+    "watch:images": "onchange \"src/images\" -- npm run build:images",
+    "watch:php": "onchange \"application/**/*.php\" -- npm run build:images",
+    "watch:all": "npm-run-all -p serve watch:css watch:js watch:images",
+    "postinstall": "npm run build:all && npm run watch:all"
+  },
+  "devDependencies": {
+    "animate-sass": "git+https://github.com/tgdev/animate-sass.git",
+    "autoprefixer": "^6.3.6",
+    "browser-sync": "^2.12.8",
+    "eslint": "^3.10.1",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-plugin-promise": "^3.3.2",
+    "eslint-plugin-standard": "^2.0.1",
+    "imagemin-cli": "^3.0.0",
+    "inuitcss": "^6.0.0-beta.4",
+    "jquery": "^3.1.1",
+    "modernizr": "^3.3.1",
+    "node-sass": "^4.5.0",
+    "npm-run-all": "^4.0.1",
+    "onchange": "^3.0.2",
+    "postcss-cli": "^2.5.2",
+    "svg-sprite-generator": "0.0.7",
+    "svgo": "^0.7.1",
+    "uglify-js": "^2.6.2"
+  }
+}

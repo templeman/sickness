@@ -1,0 +1,179 @@
+/* ============================================================
+
+  DOCUMENT INFORMATION
+  Document    : SSF Corporate Directory Styles
+  Version     : 2.1
+  Last Update : 04.05.2014
+  Author      : Needle Hoffenheimer
+
+   ============================================================ */
+
+
+// SETTINGS
+// @import "settings.config";
+// @import "settings.core";
+// @import "./node_modules/inuitcss/settings/settings.core";
+// @import "settings.global";
+// @import "settings.colors";
+
+
+
+
+
+// TOOLS
+// @import "tools/tools.font-size";
+@import "tools.aliases";
+@import "tools.paths";
+@import "tools.clearfix";
+@import "tools.font-weight";
+// @import "tools/tools.hidden";
+// @import "node_modules/sass-mq/mq";
+
+
+
+
+
+// GENERIC
+@import "./node_modules/inuitcss/generic/generic.box-sizing";
+@import "./node_modules/inuitcss/generic/generic.normalize";
+@import "./node_modules/inuitcss/generic/generic.reset";
+// @import "./node_modules/inuitcss/generic/generic.shared";
+
+
+
+
+
+// ELEMENTS
+// @import "elements.page";
+// @import "./node_modules/inuitcss/elements/elements.page";
+// @import "elements/elements.headings";
+// @import "elements/elements.images";
+// @import "elements/elements.tables";
+
+
+
+
+
+// OBJECTS
+//
+// Uncomment and add to this section as necessary.
+// @import "objects/objects.wrapper";
+// @import "objects/objects.layout";
+// @import "objects/objects.media";
+// @import "objects/objects.flag";
+// @import "objects/objects.list-bare";
+// @import "objects/objects.list-inline";
+// @import "objects/objects.box";
+// @import "objects/objects.block";
+// @import "objects/objects.ratio";
+// @import "objects/objects.crop";
+// @import "objects/objects.table";
+// @import "objects/objects.pack";
+
+
+
+
+
+// COMPONENTS
+//
+// Build and include your project’s UI Compoments here.
+// @import "components/example.components.buttons";
+// @import "components.preloader";
+
+
+
+
+
+// UTILITIES
+@import "./node_modules/inuitcss/utilities/utilities.clearfix";
+
+// $inuit-offsets: true;
+// @import "utilities/utilities.widths";
+// @import "utilities/utilities.headings";
+// @import "utilities/utilities.spacings";
+// @import "utilities/utilities.print";
+// @import "utilities/utilities.hide";
+
+
+// IMPORTS
+
+// @import "generic/preloader";
+
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  color: #16090a;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1em;
+  word-spacing: 2px;
+  text-transform: uppercase;
+  background-image: image-url("smokestack-01b.png");
+  background-repeat: no-repeat;
+  background-size: 30% auto;
+  background-position: center;
+}
+
+// .dead-center {
+//   position: absolute;
+//   z-index: 1;
+//   top: 50%;
+//   left: 0;
+//   width: 100%;
+//   height: 1px;
+//   overflow: visible;
+//   visibility: visible;
+//   display: block;
+// }
+//
+// .dead-center__content {
+//   position: absolute;
+//   width: image-width('smokestack-01b.png');
+//   height: image-height('smokestack-01b.png');
+//   margin-left: (image-width('smokestack-01b.png')*-1)/2;
+//   left: 50%;
+//   top: (image-height('smokestack-01b.png')*-1)/2;
+//   visibility: visible;
+// }
+
+.grid {
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.grid__item {
+  // width: 2%;
+  // height: 10%;
+  // padding-bottom: 2%;
+  width: 1vw;
+  height: 1vw;
+  min-height: 10px;
+  min-width: 10px;
+  background-color: transparent;
+  float: left;
+}
+
+a.special {
+  display: block;
+  background-color: transparent;
+  background-color: red; /* uncomment to reveal hidden links */
+}
+
+a.special .super-special {
+  background-color: #45CEEF;
+  -webkit-animation: pulse 10s infinite alternate;
+}
+
+@-webkit-keyframes pulse {
+  0% {background-color: #45CEEF;}
+  25% {background-color: #FFF5A5;}
+  50% {background-color: #FFD4DA;}
+  75% {background-color: #99D2E4;}
+  100% {background-color: #D8CAB4;}
+}

@@ -1,2 +1,36 @@
-# All Departments #
+# Codeigniter
+# -----------------------------------------------------------------------------
+*/config/development
+*/logs/log-*.php
+*/logs/!index.html
+*/cache/*
+*/cache/!index.html
+user_guide
+
+# Sensitive data
+# -----------------------------------------------------------------------------
+.htaccess
+application/config/config.php
+application/config/database.php
+dandelion.yml
+*.sql
+
+# Analytics
+# -----------------------------------------------------------------------------
+BingSiteAuth.xml
+google_analytics_exclusion.html
+
+# Backups
+# -----------------------------------------------------------------------------
+public/doc/archive
 bak/
+
+# Build
+# -----------------------------------------------------------------------------
+composer.json
+.vagrant/
+node_modules
+
+# Third-party
+# -----------------------------------------------------------------------------
+vendor

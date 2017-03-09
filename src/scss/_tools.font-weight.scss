@@ -1,0 +1,44 @@
+/* ==========================================================================
+   #FONT-WEIGHT
+   ========================================================================== */
+
+// Generate numbered font-weights from their aliases.
+@mixin font-weight($font-weight) {
+
+    @if ($font-weight == "thin") {
+      font-weight: 100;
+    }
+
+    @if ($font-weight == "extra light") {
+      font-weight: 200;
+    }
+
+    @if ($font-weight == "light") {
+      font-weight: 300;
+    }
+
+    @if ($font-weight == "normal") {
+      font-weight: 400;
+    }
+
+    @if ($font-weight == "medium") {
+      font-weight: 500;
+    }
+
+    @if ($font-weight == "semi bold") {
+      font-weight: 600;
+    }
+
+    @if ($font-weight == "bold") {
+      font-weight: 700;
+    }
+
+    @if ($font-weight == "extra bold") {
+      font-weight: 800;
+    }
+
+    @if ($font-weight == "black") {
+      font-weight: 900;
+    }
+
+}

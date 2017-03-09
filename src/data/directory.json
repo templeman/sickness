@@ -1,0 +1,37 @@
+var departments = {
+  1 : {
+    "name" : "Department of Blind Hunters",
+    "slug" : "blind-hunters"
+    },
+  2 : {
+    "name" : "Department of Orphans",
+    "slug" : "orphans"
+    }
+}
+
+<!-- {"departments":[ -->
+<!--   { -->
+<!--     "name" : "Department of Blind Hunters", -->
+<!--     "slug" : "blind&#45;hunters" -->
+<!--   }, -->
+<!--   { -->
+<!--     "name" : "Department of Orphans", -->
+<!--     "slug" : "orphans" -->
+<!--   }, -->
+<!--   { -->
+<!--     "name" : "Department of the Immortal Bed", -->
+<!--     "slug" : "immortal&#45;bed" -->
+<!--   }, -->
+<!--   { -->
+<!--     "name" : "Department of What Never Was", -->
+<!--     "slug" : "what&#45;never&#45;was" -->
+<!--   }, -->
+<!--   { -->
+<!--     "name" : "Department of Connecting Dots", -->
+<!--     "slug" : "connecting&#45;dots" -->
+<!--   }, -->
+<!--   { -->
+<!--     "name" : "Department of Undead Languages", -->
+<!--     "slug" : "undead&#45;languages" -->
+<!--   } -->
+<!-- ]} -->

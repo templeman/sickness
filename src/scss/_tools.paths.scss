@@ -1,0 +1,23 @@
+/* ==========================================================================
+   #PATHS
+   ========================================================================== */
+
+/**
+ * Mixin to get relative image paths in SASS
+ */
+
+/**
+ * .usage {
+ *  background-image: image-url('some_image.png');
+ * }
+ */
+
+// $http_path: "http://localhost:3000/assets/";
+$http_path: "/assets/" !default;
+$http_images_path: "images/" !default;
+$http_images_directory: "" !default;
+
+@function image-url($relative-url){
+  $tmpUrl: $http_path + $http_images_path + $http_images_directory + $relative-url;
+  @return url($tmpUrl);
+}
