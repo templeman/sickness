@@ -30,7 +30,7 @@ echo "Installing MySQL"
     apt-get install mysql-server -y > /dev/null
 
 echo "Configuring Nginx"
-    cp /var/www/html/provision/config/nginx_vhost /etc/nginx/sites-available/nginx_vhost > /dev/null
+    cp /var/www/provision/config/nginx_vhost /etc/nginx/sites-available/nginx_vhost > /dev/null
 
     ln -s /etc/nginx/sites-available/nginx_vhost /etc/nginx/sites-enabled/
 
